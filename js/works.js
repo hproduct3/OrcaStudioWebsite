@@ -1,155 +1,12 @@
-// carousel function - hero carousel
-
-
-
-
-const track = document.querySelector('.carousel-images');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-button-right');
-const prevButton = document.querySelector('.carousel-button-left');
-const dotsNav = document.querySelector('.carousel-nav');
-const dots= Array.from(dotsNav.children);
-
-
-
-
-const slideWidth = slides[0].getBoundingClientRect().width;
-
-
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px' ;
-};
-slides.forEach(setSlidePosition);
-
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
-}
-
-const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove('current-slide');
-    targetDot.classList.add('current-slide');
-
-}
-
-const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-    if (targetIndex === 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-
-    } else if (targetIndex === slides.length - 1) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
-    } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
-}
-
-const moveToNextSlide = () => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to start if needed
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling || dots[0]; // Loop back to start dot if needed
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nextIndex);
-};
-
-// auto-playing
-let slideInterval = setInterval(function() {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling || slides[0];  // Loop back to start
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling || dots[0];  // Loop back to start dot
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nextIndex);
-}, 5000);  // Change slide every 3000 ms (3 seconds)
-
-
-const pauseCarousel = () => {
-    clearInterval(slideInterval);
-}
-
-const resumeCarousel = () => {
-    slideInterval = setInterval(moveToNextSlide, 5000);
-}
-
-
-// Event listeners for mouse enter and leave
-track.addEventListener('mouseenter', pauseCarousel);
-track.addEventListener('mouseleave', resumeCarousel);
-
-
-
-prevButton.classList.add('is-hidden');
-
-prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling; 
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const prevDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide );
-
-    moveToSlide(track, currentSlide, prevSlide);
-    updateDots(currentDot, prevDot);
-    hideShowArrows(slides, prevButton, nextButton, prevIndex);
-});
-
-
-nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide );
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nextIndex);
-});
-
-
-
-dotsNav.addEventListener('click', e => {
-    const targetDot = e.target.closest('button');
-
-    if(!targetDot) return;
-
-    const currentSlide = track.querySelector('.current-slide');
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
-    
-    moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot);
-    
-    hideShowArrows(slides, prevButton, nextButton, targetIndex);
-    
-})
-
-
-
-// filter function
-
 document.addEventListener('DOMContentLoaded', function () {
     const filterBtns = document.querySelectorAll(".btn-filter");
-    const workTiles1 = document.querySelector(".work-tiles-1");
-    const workTiles2 = document.querySelector(".work-tiles-2");
+    const workTilesContainer = document.querySelector(".work-tiles-square");
     let activeFilter = null;
 
-    // Store initial state of tiles with their container and grid area
+    // Store initial state of tiles with their container
     const originalTiles = [...document.querySelectorAll(".work-tile")].map(tile => ({
         element: tile,
         parent: tile.parentNode,
-        gridArea: tile.classList.contains('gtop') ? 'gtop' :
-                  tile.classList.contains('gbottom') ? 'gbottom' : 'gside'
     }));
 
     filterBtns.forEach(button => {
@@ -175,12 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 img.src = "/img/Button_filter_selected.svg";
                 activeFilter = filterValue;
                 filterAndRearrangeTiles(filterValue);
-                
             }
         });
     });
-
-// rest tiles per filter function
 
     function resetTiles() {
         // Restore all tiles to their original containers and order
@@ -193,29 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
     function filterAndRearrangeTiles(filter) {
         const filteredTiles = originalTiles.filter(item => item.element.dataset.category === filter);
 
-        // Clear existing tiles in both containers
-        workTiles1.innerHTML = '';
-        workTiles2.innerHTML = '';
+        // Clear existing tiles in the container
+        workTilesContainer.innerHTML = '';
 
-        // Distribute filtered tiles trying to fill up each container by grid area
-        const areas = { gtop: [], gbottom: [], gside: [] };
-        filteredTiles.forEach(item => areas[item.gridArea].push(item.element));
-
-        const fillOrder = ['gtop', 'gside', 'gbottom']; // Example fill order, adjust based on your layout needs
-        fillOrder.forEach(area => {
-            areas[area].forEach(tile => {
-                if (workTiles1.querySelectorAll('.work-tile').length < 3) { // Assuming 3 tiles fit in one container
-                    workTiles1.appendChild(tile);
-                } else {
-                    workTiles2.appendChild(tile);
-                }
-            });
+        // Append filtered tiles to the container
+        filteredTiles.forEach(item => {
+            workTilesContainer.appendChild(item.element);
         });
     }
 });
 
 
-// scroll to top function
+
+
+
+// Scroll to top function
 
 function topFunction() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -236,8 +82,68 @@ function topFunction() {
     requestAnimationFrame(animateScroll);
 }
 
+// function updateClasses() {
+//     const tilesContainer1 = document.querySelector('.work-tiles-1');
+//     const tilesContainer2 = document.querySelector('.work-tiles-2');
+//     const allTiles = document.querySelectorAll('.work-tile'); // This selects all '.work-tile' elements
 
-// Responsive class update function
+//     if (window.innerWidth < 1280) {
+//         // Apply changes for smaller screens
+//         allTiles.forEach(function(tile) {
+//             // Remove 'gtop', 'gbottom', 'gside'
+//             tile.classList.remove('gtop', 'gbottom', 'gside');
+
+//             // Change class to 'uniform'
+//             if (tile.classList.contains('medium') || tile.classList.contains('small')) {
+//                 tile.classList.remove('medium', 'small');
+//                 tile.classList.add('uniform');
+//             }
+//         });
+//         if (tilesContainer1) {
+//             tilesContainer1.classList.remove('work-tiles-1');
+//             tilesContainer1.classList.add('work-tiles-0');
+//         }
+//         if (tilesContainer2) {
+//             tilesContainer2.classList.remove('work-tiles-2');
+//             tilesContainer2.classList.add('work-tiles-0');
+//         }
+//     } else {
+//         // Restore classes for larger screens
+//         allTiles.forEach(function(tile) {
+//             // Remove 'uniform' and restore 'medium' or 'small'
+//             if (tile.classList.contains('uniform')) {
+//                 tile.classList.remove('uniform');
+//                 // Determine the appropriate class to restore based on 'data-category'
+//                 tile.classList.add(tile.dataset.category === 'architecture' ? 'medium' : 'small');
+//             }
+
+//             // Restore 'gtop', 'gbottom', 'gside' as appropriate
+//             if (tile.dataset.category === 'architecture') {
+//                 if (tile.classList.contains('medium')) {
+//                     tile.classList.add('gside');
+//                 } else if (tile.classList.contains('small')) {
+//                     tile.classList.add('gtop');
+//                 }
+//             } else if (tile.dataset.category === 'product') {
+//                 if (tile.classList.contains('small')) {
+//                     tile.classList.add('gbottom');
+//                 }
+//             }
+//         });
+//         if (tilesContainer1) {
+//             tilesContainer1.classList.remove('work-tiles-0');
+//             tilesContainer1.classList.add('work-tiles-1');
+//         }
+//         if (tilesContainer2) {
+//             tilesContainer2.classList.remove('work-tiles-0');
+//             tilesContainer2.classList.add('work-tiles-2');
+//         }
+//     }
+// }
+
+// // Event listeners for resize and load events
+// window.addEventListener('resize', updateClasses);
+// window.addEventListener('load', updateClasses);
 
 function updateClasses() {
     // Select container elements by their specific classes

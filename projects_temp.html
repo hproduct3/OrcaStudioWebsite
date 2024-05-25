@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orca Design</title>
+    <link rel="stylesheet" href="CSS/style_projects.css">
+</head>
+
+
+<!-- body -->
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img src="/img/Logo.svg" alt="Orca Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Menu icon (three horizontal bars) -->
+            </div>
+            <div class="header-page-button" id="menu">
+                <a class="header-btn-1" href="/index.html">Home</a>
+                <a class="header-btn-1 selected" href="/works.html">Works</a>
+                <a class="header-btn-1" href="/about.html">About</a>
+                <a class="header-btn-2" href="mailto:theorcastudio@gmail.com">Let's talk</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="spacer-1" style="height: 130px;"></div>
+
+
+    <!-- text band -->
+    <div class="main-container">
+        
+
+            <div class="date-category">
+                <div class="date-container" id="currentDate"></div>
+                <div class="project-category" id="currentCategory"></div>
+            </div>
+
+        
+    </div>
+
+
+
+    <!-- project details -->
+    <main class="main-container-project" id="project-container">
+        <!-- Project details will be inserted here by JavaScript -->
+    </main>
+
+
+    <!-- project tile carousel -->
+
+    <div class="main-container">
+        <div class="carousel-title">
+            Discover More Design Works
+            <div class="pcarousel-button">
+            <button class="carousel-prev">
+                <img src="img/Button_pcarousel_left_grey.svg" alt="previous">
+            </button>
+            <button class="carousel-next">
+                <img src="img/Button_pcarousel_right_grey.svg" alt="next">
+            </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- carousel tile -->
+    <div id="pcarousel-container-1 " class="pcarousel-container">
+        <div id="work-tiles" class="work-tiles-square">
+            <div class="work-tile square" id="tile" data-category="architecture">
+                <a href="projects_temp.html?id=project-one" class="ai">
+                    <picture>
+                        <img src="/img/Hero-Image-temp-4.png">
+                    </picture>
+                    <div class="strap">
+                        <h3>Project Name</h3>
+                        <h4>description here</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="work-tile square" id="tile" data-category="architecture">
+                <a href="projects_temp.html?id=project-two" class="ai">
+                    <picture>
+                        <img src="/img/Hero-Image-temp-3.png">
+                    </picture>
+                    <div class="strap">
+                        <h3>Project Name</h3>
+                        <h4>description here</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="work-tile square" id="tile" data-category="product">
+                <a href="projects_temp.html?id=project-three" class="ai">
+                    <picture>
+                        <img src="/img/Product_Invest Home.png">
+                    </picture>
+                    <div class="strap">
+                        <h3>Project Name</h3>
+                        <h4>description here</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="work-tile square" id="tile" data-category="product">
+                <a href="projects_temp.html?id=project-four" class="ai">
+                    <picture>
+                        <img src="/img/Hero-Image-temp-1.png">
+                    </picture>
+                    <div class="strap">
+                        <h3>Project Name</h3>
+                        <h4>description here</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="spacer-8"></div>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="main-container ">
+            <div class="footer-tile">
+                <div class="footer-top fgtop">
+                    <img src="/img/Logo-white.svg" alt="logo">
+                    <button class="backtotop-button" onclick="topFunction()"> <img src="img/Back_top.svg"
+                            alt=""></button>
+                </div>
+                <div class="footer-body-1 fgbody-1 fbody-1 ">
+                    <div class="footer-contact">
+                        <label for="email">
+                            <h1>Let's get started</h1>
+                        </label>
+                        <div class="footer-email">
+                            <a href="mailto:theorcastudio@gmail.com">
+                                <h3>theorcastudio@gmail.com</h3> <a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-body-2 fgbody-2 fbody-2">
+                    <div class="website-map">
+                        <div class="website-map-left">
+                            <h4>Pages</h4>
+                            <a href="">Services</a>
+                            <a href="">About</a>
+                            <a href="">Contact Us</a>
+                        </div>
+                        <div class="website-map-rigtht">
+                            <h4>Services</h4>
+                            <a href="">Architecture</a>
+                            <a href="">Product Design</a>
+                            <a href="">Brand Identity</a>
+                            <a href="">Photography</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-bottom fgbottom">
+                    <div class="legal-text">&copy; 2024 Orca Design. All rights reserved.</div>
+
+                    <ul class="footer-social-item">
+                        <li><a href="https://www.instagram.com/"><img src="/img/Icon_instagram.svg" alt="">Instagram</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/"><img src="/img/Icon_facebook.svg" alt="">facebook</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/"><img src="/img/Icon_youtube.svg" alt="">Youtube</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/projects.js"></script>
+
+
+</body>
+
+</html>
