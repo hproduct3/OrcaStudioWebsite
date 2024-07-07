@@ -1386,7 +1386,6 @@ textarea::placeholder {
   }
   .client-logos img {
     height: 48px;
-    width: fit-content;
   }
 
   /* spacer */

@@ -336,6 +336,7 @@ h5 {
   text-decoration: none;
   transition: font-weight 0.1s;
   white-space: nowrap;
+  color: black;
 }
 
 .service-button img {
@@ -764,10 +765,8 @@ h5 {
 .button-57 {
   width: 125px;
   height: 40px;
-
   border-radius: 0.25rem;
   font-weight: 400;
-
   position: relative;
   overflow: hidden;
   border: 1px solid #18181a;
@@ -1311,6 +1310,11 @@ textarea::placeholder {
   .header-text.bottom {
     margin-top: 16px;
   }
+
+  .header-text.bottom h0{
+    line-height: 48px;
+  }
+
   .header-text.right {
     margin-top: 24px;
   }
@@ -1326,7 +1330,16 @@ textarea::placeholder {
     font-size: 24px;
     line-height: 30px;
   }
+/* button-57 */
+.button-57 {
+  font-size: 14px;
+  line-height: 15px;
+  padding-top: 8px;
+}
 
+
+
+/* work-tile */
 
   .work-tile.uniform picture {
     width: 100%;

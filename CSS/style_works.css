@@ -273,6 +273,7 @@ h5 {
   text-decoration: none;
   transition: font-weight 0.1s;
   white-space: nowrap;
+  color: black;
   /* Required for positioning the :after pseudo-element */
 }
 
