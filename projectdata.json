@@ -1,0 +1,378 @@
+{
+  "project_01": {
+    "data-category": "architecture",
+    "thumbnail": "/assets/project_01_MPSB/View 00.jpg",
+    "time": "2017-2021",
+    "category": "•&nbsp; Architecture & Interior Design",
+    "title": "Minneapolis Public Service Building",
+    "subtitle": "A space where public meets the city",
+    "description": "The new City of Minneapolis Public Service Building offers a customer-centric experience as the city's public service hub, inviting the community in. Inspired by the city's parks and lakes, it features open community spaces at street level, connecting to City Hall and activating the plaza.",
+    "associate": "Yuye Peng collaborated on the project at Henning Larsen",
+    "tiles": [
+      {
+        "imageUrl": "/assets/project_01_MPSB/View 01.jpg",
+        "description": "An amphitheater-like stair links the two levels, with a café seating area.",
+        "photoCredit": ""
+      },
+      {
+        "type": "slider",
+        "images": [
+          {
+            "imageUrl": "/assets/project_01_MPSB/Diagram 01.jpg"
+          },
+          {
+            "imageUrl": "/assets/project_01_MPSB/Diagram 02.jpg"
+          }
+        ],
+        "description": "A light-filled skyway level connects to the city’s 9½-mile footbridge system.",
+        "photoCredit": "Interior Material Concept"
+      },
+      {
+        "type": "slider",
+        "images": [
+          {
+            "imageUrl": "/assets/project_01_MPSB/View 02.jpg"
+          },
+          {
+            "imageUrl": "/assets/project_01_MPSB/Render 01.jpg"
+          }
+        ],
+        "description": "Soaring hardwoods warm double-height spaces, sparking collaboration.",
+        "photoCredit": " "
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Skylight brightens the service area",
+        "descriptionContent": "Massive skylight bridges office to garage, bathing service area in light.",
+        "imageUrl": "/assets/project_01_MPSB/View 04.jpg"
+      }
+    ],
+    "qoute": "\"A contemporary alternative to civic design—demonstrating how public spaces can better reflect the communities they serve.\"",
+    "awards": "2023 National AIA Architecture Award"
+  },
+  "project_02": {
+    "data-category": "architecture",
+    "thumbnail": "/assets/project_02_Denning/View 00.jpg",
+    "time": "2016-2018",
+    "category": "•&nbsp; Architecture & Interior Design",
+    "title": "Denning House",
+    "subtitle": "A hub for interdisciplinary exchange",
+    "description": "A retreat offering diverse spaces for study and events, situated by Lake Lagunita. The design maximizes views by placing large public areas on the second floor. Douglas fir and cypress cladding create a treehouse-like interior, integrating the surrounding forest landscape.",
+    "associate": "Haitao Zhou collaborated on the project while Associate at Ennead Architects",
+    "tiles": [
+      {
+        "imageUrl": "/assets/project_02_Denning/View 01.jpg",
+        "description": "A treehouse, a special retreat hidden away in the trees. One approaches the building via a gently curving, sloping boardwalk, which gradually leaves the ground.",
+        "photoCredit": "Photo © Devcon Construction"
+      },
+      {
+        "imageUrl": "/assets/project_02_Denning/View 02.jpg",
+        "description": "The major spaces here are arrayed along a shallow arcing façade, giving onto a continuous deck along the lake.",
+        "photoCredit": "Photo © Tim Griffith"
+      },
+      {
+        "imageUrl": "/assets/project_02_Denning/View 03.jpg",
+        "description": "A gently sloping ceiling rises above the stair, opening the facade towards the lake, creating a continuous flowing space that moves from intimate to grand.",
+        "photoCredit": "Photo © Tim Griffith"
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Emanates from the trees",
+        "descriptionContent": "The use of Douglas fir wood structure and surfaces throughout the interior and cypress cladding on the exterior, the building feels like a treehouse, hidden in the trees.",
+        "imageUrl": "/assets/project_02_Denning/View 05.jpg",
+        "photoCredit": "Photo © Tim Griffith"
+      }
+    ],
+    "qoute": "\"A unique workspace for Stanford grad students that’s also a home for art\"",
+    "awards": "AIA Silicon Valley Design Awards • Chicago Athenaeum American Architecture Awards"
+  },
+  "project_03": {
+    "data-category": "architecture",
+    "thumbnail": "/assets/project_03_Cali/View 01.jpg",
+    "time": "2016-2019",
+    "category": "•&nbsp; Architecture & Interior Design",
+    "title": "California Residence",
+    "subtitle": "A pavilion collects epic views",
+    "description": "Situated on a north-facing slope, this two-level house maximizes views. The lower floor, set into the hill with a green roof, contains private areas. Above, a glass pavilion houses communal spaces. The extended roof provides shade and supports solar panels. Rainwater collection adds to the home's efficiency.",
+    "associate": "Haitao Zhou collaborated on the project while at GLUCK+",
+    "tiles": [
+      {
+        "imageUrl": "/assets/project_03_Cali/View 01.jpg",
+        "description": "A glass-sided pavilion creates a loft-like space for the communal activities of living, cooking, dining, entertaining, and so on.",
+        "photoCredit": "Photo © Here and Now Agency – Paul Vu"
+      },
+      {
+        "type": "slider",
+        "images": [
+          {
+            "imageUrl": "/assets/project_03_Cali/Model 01.jpg"
+          },
+          {
+            "imageUrl": "/assets/project_03_Cali/View 02.jpg"
+          }
+        ],
+        "description": "A floating roof, skewed off the rectangle of the plan of the main floor, which allows for shade.",
+        "photoCredit": "Photo © Here and Now Agency – Paul Vu"
+      },
+      {
+        "type": "slider",
+        "images": [
+          {
+            "imageUrl": "/assets/project_03_Cali/Render 01.jpg"
+          },
+          {
+            "imageUrl": "/assets/project_03_Cali/View 03.jpg"
+          }
+        ],
+        "description": "This airy space is glazed on all sides and has tall, angled ceilings that follow the outline of the sculptural roof.",
+        "photoCredit": "Photo © Here and Now Agency – Paul Vu"
+      },
+      {
+        "imageUrl": "/assets/project_03_Cali/View 04.jpg",
+        "description": "The home’s den is tucked into the space at the bottom of the stairs where light pours in through the stairwell.",
+        "photoCredit": "Photo © Here and Now Agency – Paul Vu"
+      }
+    ],
+    "qoute": " ",
+    "awards": "2021 AIALA Residential Architecture Award of Merit"
+  },
+  "project_04": {
+    "data-category": "architecture",
+    "thumbnail": "/assets/project_04_UCSB/View 01.jpg",
+    "time": "2015-2020",
+    "category": "•&nbsp; Architecture & Interior Design",
+    "title": "UCSB Henley Hall",
+    "subtitle": "An institue for energy efficiency",
+    "description": "Shaping the future of energy-efficient design, UC Santa Barbara's Institute for Energy Efficiency drives the development of groundbreaking technologies to elevate global living standards.",
+    "associate": "Yuye Peng collaborated on the project at KieranTimberlake",
+    "tiles": [
+      {
+        "imageUrl": "/assets/project_04_UCSB/View 01.jpg",
+        "description": "3-story open-air atrium brings ambient air flow throughout the building",
+        "photoCredit": "Photo © Bruce Damonte"
+      },
+      {
+        "imageUrl": "/assets/project_04_UCSB/Section 01.jpg",
+        "description": "A dynamic 49,900 GSF space with highly functional labs, offices, and collaborative space",
+        "photoCredit": "Concept Rendering"
+      },
+      {
+        "imageUrl": "/assets/project_04_UCSB/View 02.jpg",
+        "description": "A building that breathes: an automated natural ventilation system tied to operable windows",
+        "photoCredit": "Photo © Bruce Damonte"
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "A new way of energy-saving",
+        "descriptionContent": "The design of Henley Hall integrates building users with the habitat by dematerializing the boundaries between the outdoors and in, allowing breezes to flow through the building’s atrium and extending workspaces to the outdoor green space.",
+        "imageUrl": "/assets/project_04_UCSB/View 03.jpg"
+      }
+    ],
+    "qoute": "\"Henley Hall is an exemplary research facility proving leading paradigms in energy efficiency buildings.\"",
+    "awards": "Global Design News"
+  },
+
+  "project_05": {
+    "data-category": "architecture",
+    "thumbnail": "/assets/project_05_Lighthouse/View 01.jpg",
+    "time": "2016",
+    "category": "•&nbsp; Architecture & Interior Design",
+    "title": "Lighthouse Museum",
+    "subtitle": "A gateway to explore maritime history",
+    "description": "Transformed a lighthouse into a museum on the cliffs of Murro di Porco, creating a unique cultural landmark that blends seamlessly into the natural landscape.",
+    "tiles": [
+      {
+        "imageUrl": "/assets/project_05_Lighthouse/View 01.jpg",
+        "description": "The project aims to subtly yet forcefully integrate with its complex landscape, avoiding a brutal or overwhelming presence."
+      },
+      {
+        "imageUrl": "/assets/project_05_Lighthouse/Site Plan.jpg",
+        "description": "This horizontal volume extends from the existing context toward the sea, guiding people from the built environment to nature."
+      },
+      {
+        "imageUrl": "/assets/project_05_Lighthouse/View 03.jpg",
+        "description": "The new museum and lighthouse create a courtyard with unique viewpoints for visitors to sit, engage in activities, and enjoy the lighthouse views."
+      },
+      {
+        "imageUrl": "/assets/project_05_Lighthouse/View 04.jpg",
+        "description": "Unlike the solitary and slender lighthouse, the new building is simple and serves as a background, enhancing the lighthouse's presence by complementing it."
+      }
+    ],
+    "qoute": "",
+    "awards": ""
+  },
+  "product_01": {
+    "data-category": "product",
+    "thumbnail": "/assets/product_01_PrescriptionDelivery/Medly%20IOS.jpg",
+    "time": "2019",
+    "category": "•&nbsp; Mobile App",
+    "title": "Prescription Delivery",
+    "subtitle": "Medly Pharmacy",
+    "description": "Redesigned end-to-end prescription delivery experiences from scratch, enabling simple sign-up, prescription management, and effortless scheduling of deliveries and checkouts for patients.",
+    "associate": "Collaborated on the project at Medly Pharmacy, a digital pharmacy that delivers prescriptions through an iOS app.",
+    "tiles": [
+      {
+        "videoUrl": "/assets/product_01_PrescriptionDelivery/cover.mp4",
+        "description": "Medly lets patients track prescription delivery and manage medications easily.",
+        "photoCredit": "The app received hundreds of bad app reviews and customer calls for the usability issues."
+      },
+      {
+        "imageUrl": "/assets/product_01_PrescriptionDelivery/Picture .png",
+        "description": "Customers had no way to manage or schedule medications and refills within the app.",
+        "photoCredit": "Led user research to define target audiences based on business goals."
+      },
+      {
+        "imageUrl": "/assets/product_01_PrescriptionDelivery/Team_data.png",
+        "description": "Optimized the sign-up experience, enabled auto-refills, and simplified the checkout process.",
+        "photoCredit": "Conducted a competitive study, mapped out ideal user flow, tested multiple concepts with customers."
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Categorize Rx by Status",
+        "descriptionContent": "Designed the app to allow patients, especially those with more than 10 maintenance medications, to easily filter and customize their medication list on the home page.",
+        "videoUrl": "/assets/product_01_PrescriptionDelivery/Untitled design.mp4"
+      }
+    ],
+    "qoute": "125% Total Billed Prescriptions Growth in 2021, Annual Revenue Run Rate (ARR) grow 32%.",
+    "awards": "MVP was launched in 8 months"
+  },
+  "product_02": {
+    "data-category": "product",
+    "thumbnail": "/assets/product_02_PopshopLive/Popshop.png",
+    "time": "2021",
+    "category": "•&nbsp; All Platforms",
+    "title": "Shop, Sell, LiveStream",
+    "subtitle": "Popshop Live",
+    "description": "Designed a user-friendly and efficient experience for sellers and customers, offering a range of features and tools available on native apps and the web.",
+    "associate": "Collaborated with Popshop Live, which offers a new way to shop products through live shows.",
+    "tiles": [
+      {
+        "imageUrl": "/assets/product_02_PopshopLive/Popshop Cover.jpg",
+        "description": "Popshop Live aimed to allow users to create and host their own shopping channel.",
+        "photoCredit": "Both Seller’s dashboard and Live Show Mobile app needed IA and UI improvement."
+      },
+      {
+        "imageUrl": "/assets/product_02_PopshopLive/Picture → 01_team_data_desktop_light.png.png",
+        "description": "Simple, Focused, Scalable Store Profile.",
+        "photoCredit": "Evolved UI through multiple phases across platforms"
+      },
+      {
+        "imageUrl": "/assets/product_02_PopshopLive/2.png",
+        "description": "The new dashboard allows sellers to quickly track store performance data, including revenue, followers, referrals, and badge progress."
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Motivated and Celebrated Badges",
+        "descriptionContent": "Users receive notifications when they earn a new badge and can view available quests and see which other users have earned badges.",
+        "videoUrl": "/assets/product_02_PopshopLive/Badge notification.mp4"
+      }
+    ],
+    "qoute": "The # 1 Live Shopping Experience in the USA.",
+    "awards": "Rating: 4.7 on the Apple App Store"
+  },
+  "product_03": {
+    "data-category": "product",
+    "thumbnail": "assets/product_03_StashGrowth/OBR%20Cover.jpg",
+    "time": "2022",
+    "category": "•&nbsp; All Platforms",
+    "title": "Activation & Engagement",
+    "subtitle": "Stash",
+    "description": "Led the end-to-end growth experience which helps millions of users subscribe and start investing easily.",
+    "associate": "Collaborated on the project at Stash, a subscription-based fintech company at New York.",
+    "tiles": [
+      {
+        "videoUrl": "/assets/product_03_StashGrowth/Cover Video.mp4",
+        "description": "Stash’s mission is to make investing easy and affordable for everyone.",
+        "photoCredit": "Less than 30% of customers make a deposit or investment within the first 30 days, according to user data."
+      },
+      {
+        "imageUrl": "/assets/product_03_StashGrowth/image 5.png",
+        "description": "Customers feel not ready to subscribe and deposit in for investing.",
+        "photoCredit": "User Research followed 22 participants over 5 weeks to understand their first-time experience"
+      },
+      {
+        "imageUrl": "/assets/product_03_StashGrowth/Picture → 01_team_data_desktop_light.png",
+        "description": "Simplified onboarding with engage-first, subscribe-later, and personalized engagement.",
+        "photoCredit": "Led Vision and Strategy, defined releasing plan with PM and Engineers."
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Guide me what to invest",
+        "descriptionContent": "Introduced a new personal portfolio featuring 3 recommended ETFs and 4 top-trending stocks, with clear definitions and explanations for each recommendation. Users can skip and make their investment choices later.",
+        "videoUrl": "/assets/product_03_StashGrowth/Personal.mp4"
+      }
+    ],
+    "qoute": "The account conversion rate increased by 6%, with 81.6% of users accessing the investment path from the Day 0 home page.",
+    "awards": "Outcome data by Oct 26, 2023"
+  },
+  "product_04": {
+    "data-category": "product",
+    "thumbnail": "/assets/product_04_MedlyProvider/Provider App.png",
+    "time": "2019",
+    "category": "•&nbsp; Web App ",
+    "title": "Provider Dashboard",
+    "subtitle": "Medly Pharmacy ",
+    "description": "Designed and launched the end-to-end experience, defined product strategy, and implemented the MVP and new design system with PMs and engineers.",
+    "associate": "Collaborated on the Medly Pharmacy project, helping providers track patient prescriptions.",
+    "tiles": [
+      {
+        "imageUrl": "/assets/product_04_MedlyProvider/Provider App.png",
+        "description": "The provider dashboard simplifies prescription tracking and approvals.",
+        "photoCredit": "Users faced challenges using over 5 tools for communication and collaboration."
+      },
+      {
+        "imageUrl": "/assets/product_04_MedlyProvider/Picture → 01_team_data_desktop_light.png",
+        "description": "The web app was designed for healthcare providers and account managers.",
+        "photoCredit": "Conducted user research to identify essential features for providers, and defined and iterated experiences through rapid testing."
+      },
+      {
+        "imageUrl": "/assets/product_04_MedlyProvider/component 1.png",
+        "description": "Created a professional and trustworthy brand feeling for the audience.",
+        "photoCredit": "Created new brand colors, fonts, icons, and UI components from the ground up."
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Simplified Dashboard",
+        "descriptionContent": "Enabled providers to switch between clinic-specific dashboards and patient info, simplifying the dashboard for better readability. Clearly displayed required actions for providers and categorized patients by prescription status.",
+        "videoUrl": "/assets/product_04_MedlyProvider/Prototype 1.mp4"
+      }
+    ],
+    "qoute": "Initiated 50,000 prior authorizations over the year, significantly easing providers' workload.",
+    "awards": "MVP was launched in 2020."
+  },
+  "product_05": {
+    "data-category": "product",
+    "thumbnail": "/assets/product_05_InvestHome/Invest Home.png",
+    "time": "2022",
+    "category": "•&nbsp; Mobile App",
+    "title": "Personalized Investing Experience",
+    "subtitle": "Stash",
+    "description": "Led user research and design exploration, defined the launch roadmap with PMs, optimizing the investing experience and increasing engagement.",
+    "associate": "Collaborated on the project at Stash, a subscription-based fintech company in New York.",
+    "tiles": [
+      {
+        "videoUrl": "/assets/product_05_InvestHome/cover.mp4",
+        "description": "30% of new customers unsubscribe in the first month due to a difficult investing experience.",
+        "photoCredit": "The existing experience is inconsistent, redundant, and confusing."
+      },
+      {
+        "imageUrl": "/assets/product_05_InvestHome/Wireframes.png",
+        "description": "Created a simple, optimistic & approachable experience.",
+        "photoCredit": "Explored five concepts and interviewed ten customers. Created content to meet customer needs and guide them in tracking long-term wealth progress."
+      },
+      {
+        "imageUrl": "/assets/product_05_InvestHome/UI refinement.png",
+        "description": "The same brand with a simpler, clearer UI design.",
+        "photoCredit": "Conducted unmoderated testing and refined the IA and UI based on customer feedback."
+      },
+      {
+        "type": "combo",
+        "descriptionTitle": "Personalized recommendation",
+        "descriptionContent": "Provide customers with investment recommendations, portfolio diversification tips, and stock reward opportunities. Tailored learning content is linked to actionable moments, like buying related investments.",
+        "videoUrl": "/assets/product_05_InvestHome/Invest-Home-Interactions.mp4"
+      }
+    ],
+    "qoute": "New investment purchases increased by 25%, and the monthly churn rate decreased by 13%.",
+    "awards": "Phase 1 was launched in March, 2022"
+  }
+}

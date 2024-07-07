@@ -2,232 +2,301 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Orca Design</title>
-    <link rel="stylesheet" href="CSS/style_about.css">
+  <title>Orca Design</title>
+  <link rel="stylesheet" href="CSS/style_about.css" />
 </head>
 
 <body>
-
-
+  
     <header>
-        <div class="main-container-full">
-            <div class="navbar" id="navbar">
-                <div class="logo">
-                    <img src="/img/Logo.svg" alt="Orca Logo">
-                </div>
-                <div class="menu-icon" onclick="toggleMenu()">
-                    &#9776; <!-- Menu icon (three horizontal bars) -->
-                </div>
-                <div class="header-page-button" id="menu">
-                    <a class="header-btn-1" href="/index.html">Home</a>
-                    <a class="header-btn-1" href="/works.html">Works</a>
-                    <a class="header-btn-1 selected" href="/about.html">About</a>
-                    <a class="header-btn-2" href="mailto:theorcastudio@gmail.com">Let's talk</a>
-                </div>
-            </div>
+      <div class="navbar-background"></div>
+      <div class="navbar-container" id="navcontainer">
+        <div class="navbar" id="navbar">
+          <a href="/index.html">
+          <div class="logo">
+            <img id="logoImage" src="/img/Logo.svg" alt="Orca Logo" />
+          </div>
+          </a>
+          <div class="menu-icon" onclick="toggleMenu()">
+          
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          
+          </div>
+          <div class="header-page-button" id="menu">
+            <a class="header-btn-1" href="/index.html">Home</a>
+            <a class="header-btn-1" href="/works.html">Works</a>
+            <a class="header-btn-1 selected" href="/about.html">About</a>
+            <button class="open-button button-57 navopen" 
+                      style="width: 100px; font-family: poppins; margin-left:24px; padding: 8px 8px 17px; border-radius: .25rem; border:0.25px solid rgb(97,97,97);">
+              <span class="text">Let's talk</span>
+              <span>Let's talk</span>
+            </button>
+          </div>
         </div>
+      </div>
     </header>
 
+  <div class="spacer-1"></div>
 
-    <!-- About-Top -->
+  <!-- About-Top -->
 
-    <div class="about-top">
-        <div class="about-hero">
-            <img src="/img/Hero.jpg" alt="">
-        </div>
-
-        <div class="about-top-text">
-            <p class="about-top-text-body-1">We are a small dynamic studio</p>
-            <h1 class="about-top-text-title">Orca</h1>
-            <p class="about-top-text-body-2">We are an interdisciplinary design studio based in New york, specializing
-                in brand and Product design, Architecture and interior design, Experience design and photography.</p>
-        </div>
+  <div class="about-top">
+    <div class="about-hero">
+      <img src="/assets/profile/Hero.jpg" alt="" />
     </div>
-    <!-- we deliver -->
+
+    <div class="about-top-text">
+      <p class="about-top-text-body-1">We are a dynamic interdisciplinary design studio based in New York.</p>
+      <h1 class="about-top-text-title">Orca</h1>
+      <p class="about-top-text-body-2">
+        Bringing <b>O</b>riginal ideas, <b>R</b>efined aesthetics, <b>C</b>reative solutions, and <b>A</b>rtistic vision to our work, we specialize in product design, architecture, interior design, brand design, and photography.
+      </p>
+    </div>
+  </div>
+  <!-- we deliver -->
+  <div class="main-container">
+    <div class="deliver-page">
+      <h0>What We Deliver</h0>
+      <div class="deliver-tiles">
+        <div class="deliver-tile">
+          <h2 class="deliver-tile-title">Product Design</h2>
+          <div class="deliver-tile-text">
+            <p>UX/UI Design</p>
+            <p>Product Strategy and Vision</p>
+            <p>User Research</p>
+            <p>Design System</p>
+            <p>Packaging Design</p>
+            <p>Brand Design</p>
+          </div>
+        </div>
+        <div class="deliver-tile">
+          <h2 class="deliver-tile-title">Web Development</h2>
+          <div class="deliver-tile-text">
+            <p>Front End Development</p>
+            <p>Back End Development</p>
+            <p>SEO</p>
+            <p>Content Management System</p>
+          </div>
+        </div>
+        <div class="deliver-tile">
+          <h2 class="deliver-tile-title">Architecture & Interior</h2>
+          <div class="deliver-tile-text">
+            <p>Architectural & Interior Design</p>
+            <p>Construction Documentation</p>
+            <p>Feasibility & Programming</p>
+            <p>DOB Permits & Filing</p>
+            <p>Construction Administration</p>
+          </div>
+        </div>
+        <div class="deliver-tile">
+          <h2 class="deliver-tile-title">Photography</h2>
+          <div class="deliver-tile-text">
+            <p>Landscape and Urban</p>
+            <p>Architectural</p>
+            <p>People</p>
+            <p>Wedding</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- profile -->
+  <div class="main-container">
+    <div class="profile">
+      <div class="profile-tile">
+        <div class="profile-picture">
+          <img src="/assets/profile/YP-headshot.jpg" alt="" />
+        </div>
+        <div class="profile-text">
+          <h2 class="profile-text-1">Yuye Peng</h2>
+          <p class="profile-text-2">
+            Co-founder of Orca Design Studio, Yuye Peng is a versatile professional with over 7 years of experience as a Product Designer, also experienced as a Web Developer, and an Architectural Designer.
+          </p>
+          <p class="profile-text-2">
+            With a deep understanding of design trends and user needs, Yuye Peng leverages extensive research and user data to craft intuitive, compelling designs. Her experience includes roles at top tech companies like Adobe and Stash, as well as contributions to award-winning architecture firms such as OMA and Henning Larsen. This unique blend of architectural insight and tech industry expertise enables her to deliver innovative design solutions for a diverse audience.
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-tile">
+        <div class="profile-picture">
+          <img src="/assets/profile/HZ-headshot.jpg" alt="" />
+        </div>
+        <div class="profile-text">
+          <h2 class="profile-text-1">Haitao Zhou</h2>
+          <p class="profile-text-2">
+            Co-founder of Orca Design Studio, Haitao Zhou is a seasoned architect with over a decade of experience, also skilled as a Web Developer. 
+          </p>
+          <p class="profile-text-2">
+            Currently is a Registered Architect in the State of New York, Haitao's background includes working at award-winning architecture firms such as GLUCK+ and Ennead. He has designed, managed, and executed a diverse range of projects, including single-family homes, multifamily housing, schools, laboratories, and commercial buildings. His extensive experience and versatile skill set enable him to deliver innovative and well-executed design solutions.
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected Clients -->
+  <div class="main-container">
+    <div class="selected-clients">
+      <h1>Selected Clients</h1>
+      <div class="client-logos">
+        <img src="/img/client_logo_1.png" alt="" />
+        <img src="/img/client_logo_2.png" alt="" />
+        <img src="/img/client_logo_3.png" alt="" />
+        <img src="/img/client_logo_4.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="footer">
     <div class="main-container">
-        <div class="deliver-page">
-            <h0>We deliver</h0>
-            <div class="deliver-tiles">
-
-                <div class="deliver-tile">
-                    <h2 class="deliver-tile-title">Product Design</h2>
-                    <div class="deliver-tile-text">
-                        <p>App Design</p>
-                        <p>Interaction Design</p>
-                        <p>Dsign System</p>
-                        <p>Web Design</p>
-                    </div>
-                </div>
-                <div class="deliver-tile">
-                    <h2 class="deliver-tile-title">Brand Identity</h2>
-                    <div class="deliver-tile-text">
-                        <p>App Design</p>
-                        <p>Interaction Design</p>
-                        <p>Dsign System</p>
-                        <p>Web Design</p>
-                    </div>
-
-
-                </div>
-                <div class="deliver-tile">
-                    <h2 class="deliver-tile-title">Architecture</h2>
-                    <div class="deliver-tile-text">
-                        <p>App Design</p>
-                        <p>Interaction Design</p>
-                        <p>Dsign System</p>
-                        <p>Web Design</p>
-                    </div>
-                </div>
-                <div class="deliver-tile">
-                    <h2 class="deliver-tile-title">Photography</h2>
-                    <div class="deliver-tile-text">
-                        <p>App Design</p>
-                        <p>Interaction Design</p>
-                        <p>Dsign System</p>
-                        <p>Web Design</p>
-                    </div>
-                </div>
-
-            </div>
+      <div class="footer-tile">
+        <div class="footer-top fgtop">
+          <img src="/img/Logo-white.svg" alt="logo" />
+          <button class="backtotop-button" onclick="topFunction()">
+            <img src="img/Back_top.svg" alt="" />
+          </button>
         </div>
+        <div class="footer-body-1 fgbody-1 fbody-1">
+          <div class="footer-contact">
+            <label for="email">
+              <h1>Let's collaborate</h1>
+            </label>
+            <button class="open-button button-57">
+              <span class="text">Get in touch</span>
+              <span>Start Now!</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-body-2 fgbody-2 fbody-2">
+          <div class="website-map">
+            <div class="website-map-left">
+              <h4>Homes</h4>
+              <a href="/works.html">Services</a>
+              <a href="/about.html">About</a>
+            </div>
+            <div class="website-map-rigtht">
+              <h4>Services</h4>
+              <a onclick="navigateWithFilter('product')">Product Design</a>
+              <a onclick="navigateWithFilter('architecture')">Architecture & Interior</a>
+              <a onclick="navigateWithFilter('photo')">Photography</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fgbottom">
+          <div class="legal-text">
+            &copy; 2024 Orca Design. All rights reserved.
+          </div>
+
+          <ul class="footer-social-item">
+            <li>
+              <a href="https://www.instagram.com/"><img src="/img/Icon_instagram.svg" alt="" />Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/"><img src="/img/Icon_facebook.svg" alt="" />facebook</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"><img src="/img/Icon_youtube.svg" alt="" />Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- profile -->
-    <div class="main-container">
-        <div class="profile">
+  </footer>
+   <!-- Email Modal -->
+   <dialog class="modal" id="modal">
+      
+    <button class="close-button">
+      <img src="/img/Button_close.svg" alt="" />
+    </button>
 
-            <div class="profile-tile">
-                <div class="profile-picture">
+    <form
+      class="gform pure-form pure-form-stacked"
+      method="POST"
+      data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbwibH_zLhyHm10LTz-ukXNYuUOva4RYiqV9gCmUiCP4coUNeWUq4RTrlbEWe-LwC1QMFA/exec"
+    >
+      <!-- change the form action to your script url -->
 
-                    <img src="/img/portrait_3.webp" alt="">
-
-                </div>
-                <div class="profile-text">
-                    <h2 class="profile-text-1">Yeye Peng</h2>
-                    <p class="profile-text-2">is an architect and a co-founder of Place Of Assembly. Trevor
-                        has extensive experience within the building sphere including in construction, real
-                        estate,event design on top of architecture and is adept at viewing projects from multiple
-                        stakeholder’s vantage points. Trevor has worked at award winning architecture firms within NYC
-                        including
-                        Ennead, WORKac and Marpillero Pollak Architects.
-
-                        Trevor holds a Masters in Architecture from Columbia University and a Bachelor of
-                        Science in Architecture from the University of Virginia.</p>
-                </div>
-
-
-
-            </div>
-
-
-            <div class="profile-tile">
-                <div class="profile-picture">
-
-                    <img src="/img/portrait_2.jpeg" alt="">
-
-                </div>
-                <div class="profile-text">
-                    <h2 class="profile-text-1">Haitao Zhou</h2>
-                    <p class="profile-text-2">is an architect and a co-founder of Place Of Assembly. Trevor
-                        has extensive experience within the building sphere including in construction, real estate,
-                        event
-                        design on top of architecture and is adept at viewing projects from multiple stakeholder’s
-                        vantage
-                        points. Trevor has worked at award winning architecture firms within NYC including Ennead,
-                        WORKac
-                        and Marpillero Pollak Architects.
-
-                        Trevor holds a Masters in Architecture from Columbia University and a Bachelor of Science in
-                        Architecture from the University of Virginia.</p>
-                </div>
-
-            </div>
-
+      <div class="form-elements">
+        <div class="content-head">
+          <p>Let's get started!</p>
         </div>
-    </div>
+        <fieldset class="pure-group">
+          <label for="name">Name: </label>
+          <input id="name" name="name" placeholder="e.g. John Doe" />
+        </fieldset>
 
-    <!-- Selected Clients -->
-    <div class="main-container">
-        <div class="selected-clients">
-            <h1>Selected Clients</h1>
-            <div class="client-logos">
-                <img src="/img/client_logo_1.png" alt="">
-                <img src="/img/client_logo_2.png" alt="">
-                <img src="/img/client_logo_3.png" alt="">
-                <img src="/img/client_logo_4.png" alt="">
+        <fieldset class="pure-group">
+          <label for="email">Email Address:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value=""
+            required
+            placeholder="your.name@email.com"
+          />
+        </fieldset>
 
-            </div>
-        </div>
-    </div>
+        <fieldset class="pure-group">
+          <label for="phone">Phone Number: </label>
+          <input id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" />
+        </fieldset>
 
-    <!-- footer -->
+        <fieldset class="pure-group">
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="10"
+            placeholder="Tell us what's on your mind..."
+          ></textarea>
+        </fieldset>
 
-    <footer class="footer">
-        <div class="main-container ">
-            <div class="footer-tile">
-                <div class="footer-top fgtop">
-                    <img src="/img/Logo-white.svg" alt="logo">
-                    <button class="backtotop-button" onclick="topFunction()"> <img src="img/Back_top.svg"
-                            alt=""></button>
-                </div>
-                <div class="footer-body-1 fgbody-1 fbody-1 ">
-                    <div class="footer-contact">
-                        <label for="email">
-                            <h1>Let's get started</h1>
-                        </label>
-                        <div class="footer-email">
-                            <input type="email" id="email" pattern=".+@example\.com" size="30"
-                                placeholder="Enter your email" />
-                            <button type="submit" class="footer_email">
-                                <img src="/img/Button_submit.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-body-2 fgbody-2 fbody-2">
-                    <div class="website-map">
-                        <div class="website-map-left">
-                            <h4>Pages</h4>
-                            <a href="">Services</a>
-                            <a href="">About</a>
-                            <a href="">Contact Us</a>
-                        </div>
-                        <div class="website-map-rigtht">
-                            <h4>Services</h4>
-                            <a href="">Architecture</a>
-                            <a href="">Product Design</a>
-                            <a href="">Brand Identity</a>
-                            <a href="">Photography</a>
-                        </div>
-                    </div>
+        <fieldset class="pure-group honeypot-field">
+          <label for="honeypot"
+            >To help avoid spam, utilize a Honeypot technique with a hidden
+            text field; must be empty to submit the form! Otherwise, we assume
+            the user is a spam bot.</label
+          >
+          <input id="honeypot" type="text" name="honeypot" value="" />
+        </fieldset>
 
-                </div>
-                <div class="footer-bottom fgbottom">
-                    <div class="legal-text">&copy; 2024 Orca Design. All rights reserved.</div>
+        <button class="button-success pure-button">
+          <i class="fa fa-paper-plane"></i>&nbsp;Submit
+        </button>
+      </div>
 
-                    <ul class="footer-social-item">
-                        <li><a href="https://www.instagram.com/"><img src="/img/Icon_instagram.svg" alt="">Instagram</a>
-                        </li>
-                        <li><a href="https://www.facebook.com/"><img src="/img/Icon_facebook.svg" alt="">facebook</a>
-                        </li>
-                        <li><a href="https://www.youtube.com/"><img src="/img/Icon_youtube.svg" alt="">Youtube</a>
-                        </li>
-                    </ul>
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div class="thankyou_message" style="display: none">
+        <p>Thanks for contacting us!</p>
+        <p>We will get back to you soon!</p>
+        <button class="close-button">
+          <img src="/img/Button_close.svg" alt="" />
+        </button>
+      </div>
+    </form>
+    <script
+      data-cfasync="false"
+      src="/js/form-submission-handler.js"
+    ></script>
+  </dialog>
 
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/about.js"></script>
-
-
-
-
-
-
-
-
+  <script src="/js/about.js"></script>
+  <script>
+    function navigateWithFilter(filter) {
+      window.location.href = `/works.html?filter=${filter}`;
+    }
+  </script>
 </body>
+
+</html>

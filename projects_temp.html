@@ -13,37 +13,35 @@
 
 <body>
     <header>
+      <div class="navbar-background"></div>
+      <div class="navbar-container" id="navcontainer">
         <div class="navbar" id="navbar">
+          <a href="/index.html">
             <div class="logo">
-                <img src="/img/Logo.svg" alt="Orca Logo">
+              <img id="logoImage" src="/img/Logo.svg" alt="Orca Logo" />
             </div>
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776; <!-- Menu icon (three horizontal bars) -->
-            </div>
-            <div class="header-page-button" id="menu">
-                <a class="header-btn-1" href="/index.html">Home</a>
-                <a class="header-btn-1 selected" href="/works.html">Works</a>
-                <a class="header-btn-1" href="/about.html">About</a>
-                <a class="header-btn-2" href="mailto:theorcastudio@gmail.com">Let's talk</a>
-            </div>
+            </a>
+          <div class="menu-icon" onclick="toggleMenu()">
+          
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          
+          </div>
+          <div class="header-page-button" id="menu">
+            <a class="header-btn-1" href="/index.html">Home</a>
+            <a class="header-btn-1" href="/works.html">Works</a>
+            <a class="header-btn-1" href="/about.html">About</a>
+            <button class="open-button button-57 navopen" 
+                      style="width: 100px; font-family: poppins; margin-left:24px; padding: 8px 8px 17px; border-radius: .25rem; border:0.25px solid rgb(97,97,97);">
+              <span class="text">Let's talk</span>
+              <span>Let's talk</span>
+            </button>
+          </div>
         </div>
+      </div>
     </header>
 
-    <div class="spacer-1" style="height: 130px;"></div>
-
-
-    <!-- text band -->
-    <div class="main-container">
-        
-
-            <div class="date-category">
-                <div class="date-container" id="currentDate"></div>
-                <div class="project-category" id="currentCategory"></div>
-            </div>
-
-        
-    </div>
-
+    <div class="spacer-1" ></div>
 
 
     <!-- project details -->
@@ -72,50 +70,7 @@
     <!-- carousel tile -->
     <div id="pcarousel-container-1 " class="pcarousel-container">
         <div id="work-tiles" class="work-tiles-square">
-            <div class="work-tile square" id="tile" data-category="architecture">
-                <a href="projects_temp.html?id=project-one" class="ai">
-                    <picture>
-                        <img src="/img/Hero-Image-temp-4.png">
-                    </picture>
-                    <div class="strap">
-                        <h3>Project Name</h3>
-                        <h4>description here</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="work-tile square" id="tile" data-category="architecture">
-                <a href="projects_temp.html?id=project-two" class="ai">
-                    <picture>
-                        <img src="/img/Hero-Image-temp-3.png">
-                    </picture>
-                    <div class="strap">
-                        <h3>Project Name</h3>
-                        <h4>description here</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="work-tile square" id="tile" data-category="product">
-                <a href="projects_temp.html?id=project-three" class="ai">
-                    <picture>
-                        <img src="/img/Product_Invest Home.png">
-                    </picture>
-                    <div class="strap">
-                        <h3>Project Name</h3>
-                        <h4>description here</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="work-tile square" id="tile" data-category="product">
-                <a href="projects_temp.html?id=project-four" class="ai">
-                    <picture>
-                        <img src="/img/Hero-Image-temp-1.png">
-                    </picture>
-                    <div class="strap">
-                        <h3>Project Name</h3>
-                        <h4>description here</h4>
-                    </div>
-                </a>
-            </div>
+           <!-- The JavaScript will populate this div with related projects --> 
         </div>
     </div>
 
@@ -134,34 +89,31 @@
                     <button class="backtotop-button" onclick="topFunction()"> <img src="img/Back_top.svg"
                             alt=""></button>
                 </div>
-                <div class="footer-body-1 fgbody-1 fbody-1 ">
+                <div class="footer-body-1 fgbody-1 fbody-1">
                     <div class="footer-contact">
-                        <label for="email">
-                            <h1>Let's get started</h1>
-                        </label>
-                        <div class="footer-email">
-                            <a href="mailto:theorcastudio@gmail.com">
-                                <h3>theorcastudio@gmail.com</h3> <a>
-                        </div>
+                      <label for="email">
+                        <h1>Let's collaborate</h1>
+                      </label>
+                      <button class="open-button button-57">
+                        <span class="text">Get in touch</span>
+                        <span>Start Now!</span>
+                      </button>
                     </div>
-                </div>
+                  </div>
                 <div class="footer-body-2 fgbody-2 fbody-2">
-                    <div class="website-map">
-                        <div class="website-map-left">
-                            <h4>Pages</h4>
-                            <a href="">Services</a>
-                            <a href="">About</a>
-                            <a href="">Contact Us</a>
-                        </div>
-                        <div class="website-map-rigtht">
-                            <h4>Services</h4>
-                            <a href="">Architecture</a>
-                            <a href="">Product Design</a>
-                            <a href="">Brand Identity</a>
-                            <a href="">Photography</a>
-                        </div>
+                  <div class="website-map">
+                    <div class="website-map-left">
+                      <h4>Homes</h4>
+                      <a href="/works.html">Services</a>
+                      <a href="/about.html">About</a>
                     </div>
-
+                    <div class="website-map-rigtht">
+                      <h4>Services</h4>
+                      <a onclick="navigateWithFilter('product')">Product Design</a>
+                      <a onclick="navigateWithFilter('architecture')">Architecture & Interior</a>
+                      <a onclick="navigateWithFilter('photo')">Photography</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="footer-bottom fgbottom">
                     <div class="legal-text">&copy; 2024 Orca Design. All rights reserved.</div>
@@ -178,9 +130,95 @@
             </div>
         </div>
     </footer>
+            <!-- Email Modal -->
+            <dialog class="modal" id="modal">
+      
+                <button class="close-button">
+                  <img src="/img/Button_close.svg" alt="" />
+                </button>
+          
+                <form
+                  class="gform pure-form pure-form-stacked"
+                  method="POST"
+                  data-email="example@email.net"
+                  action="https://script.google.com/macros/s/AKfycbwibH_zLhyHm10LTz-ukXNYuUOva4RYiqV9gCmUiCP4coUNeWUq4RTrlbEWe-LwC1QMFA/exec"
+                >
+                  <!-- change the form action to your script url -->
+          
+                  <div class="form-elements">
+                    <div class="content-head">
+                      <p>Let's get started!</p>
+                    </div>
+                    <fieldset class="pure-group">
+                      <label for="name">Name: </label>
+                      <input id="name" name="name" placeholder="e.g. John Doe" />
+                    </fieldset>
+          
+                    <fieldset class="pure-group">
+                      <label for="email">Email Address:</label>
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value=""
+                        required
+                        placeholder="your.name@email.com"
+                      />
+                    </fieldset>
+          
+                    <fieldset class="pure-group">
+                      <label for="phone">Phone Number: </label>
+                      <input id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" />
+                    </fieldset>
+          
+                    <fieldset class="pure-group">
+                      <label for="message">Message: </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="10"
+                        placeholder="Tell us what's on your mind..."
+                      ></textarea>
+                    </fieldset>
+          
+                    <fieldset class="pure-group honeypot-field">
+                      <label for="honeypot"
+                        >To help avoid spam, utilize a Honeypot technique with a hidden
+                        text field; must be empty to submit the form! Otherwise, we assume
+                        the user is a spam bot.</label
+                      >
+                      <input id="honeypot" type="text" name="honeypot" value="" />
+                    </fieldset>
+          
+                    <button class="button-success pure-button">
+                      <i class="fa fa-paper-plane"></i>&nbsp;Submit
+                    </button>
+                  </div>
+          
+                  <!-- Customise the Thankyou Message People See when they submit the form: -->
+                  <div class="thankyou_message" style="display: none">
+                    <p>Thanks for contacting us!</p>
+                    <p>We will get back to you soon!</p>
+                    <button class="close-button">
+                      <img src="/img/Button_close.svg" alt="" />
+                    </button>
+                  </div>
+                </form>
+                <script
+                  data-cfasync="false"
+                  src="/js/form-submission-handler.js"
+                ></script>
+              </dialog>
+    
+    
 
     <script src="/js/projects.js"></script>
-
+    <script>
+      function navigateWithFilter(filter) {
+        window.location.href = `/works.html?filter=${filter}`;
+      }
+    </script>
+  
 
 </body>
 
