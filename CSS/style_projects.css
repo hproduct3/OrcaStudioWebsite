@@ -1502,6 +1502,13 @@ textarea::placeholder {
   .spacer-8 {
     height: 64px;
   }
+  /* button-57 */
+.button-57 {
+  font-size: 14px;
+  line-height: 15px;
+  padding-top: 12px;
+}
+
   /* footer */
 
   .footer-tile {

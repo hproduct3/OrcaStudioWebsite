@@ -1274,6 +1274,12 @@ textarea::placeholder {
     height: 48px;
     margin-left: 24px;
   }
+  /* button-57 */
+.button-57 {
+  font-size: 14px;
+  line-height: 15px;
+  padding-top: 12px;
+}
 
     /* footer */
 

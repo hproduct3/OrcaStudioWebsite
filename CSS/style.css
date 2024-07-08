@@ -175,7 +175,7 @@ h5 {
   grid-column: 2;
   grid-row: 1 / span 2;
   width: 252px;
-  align-self: flex-end;
+  align-self: center;
   justify-self: flex-end;
 }
 
@@ -285,7 +285,7 @@ h5 {
 }
 
 .spacer-4 {
-  height: 100px;
+  height: 160px;
 }
 
 .spacer-5 {
@@ -829,7 +829,9 @@ h5 {
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
-
+.button-57.navopen {
+  padding: 5px 8px 8px;
+}
 .close-button {
   color: tomato;
   width: 48px;
@@ -1006,9 +1008,7 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 1279px) {
-  .header-text-band {
-    display: block;
-  }
+  
 
   .carousel-button {
     display: none;
@@ -1043,17 +1043,21 @@ textarea::placeholder {
   .header-text-service {
     display: block;
   }
+  .header-text-small {
+    margin-bottom: 24px;
+  }
+
 
   .spacer-3 {
     height: 70px;
   }
 
   .spacer-4 {
-    height: 40px;
+    height: 100px;
   }
 
   .spacer-5 {
-    height: 40px;
+    height: 0px;
   }
 
   .spacer-6 {
@@ -1301,12 +1305,20 @@ textarea::placeholder {
     font-family: poppins;
     cursor: pointer;
   }
+  .button-57.navopen {
+    padding: 12px 8px 8px;
+  }
 
   .navopen .button-img {
     width: 20px;
     height: 20px;
     margin-left: 10px;
   }
+
+  .header-text-band {
+    display: block;
+  }
+
   .header-text.bottom {
     margin-top: 16px;
   }
@@ -1322,6 +1334,11 @@ textarea::placeholder {
   .header-text-small h0 {
     font-size: 36px;
   }
+
+  .header-text-small {
+    margin-bottom: 0px;
+  }
+
   .header-text-band button {
     margin-top: 24px;
   }
@@ -1334,7 +1351,7 @@ textarea::placeholder {
 .button-57 {
   font-size: 14px;
   line-height: 15px;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 
