@@ -965,7 +965,7 @@ textarea::placeholder {
 
 @media (max-width: 768px) {
   h0 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 400;
     line-height: 56px;
   }
@@ -975,6 +975,7 @@ textarea::placeholder {
     font-weight: 400;
     line-height: 48px;
   }
+
 
   .spacer-1 {
     height: 120px;
@@ -1167,7 +1168,7 @@ textarea::placeholder {
     margin-left: 10px;
   }
   .header-text.bottom h0 {
-    line-height: 42px; /* 116.667% */
+    line-height: 48px; /* 116.667% */
     text-transform: capitalize;
   }
   .header-text.right {

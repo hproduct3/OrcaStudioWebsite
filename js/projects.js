@@ -552,3 +552,10 @@ document.addEventListener(
   },
   false
 );
+
+
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('error', function(e) {
+    console.error('Video error:', this.error, this.src);
+  });
+});

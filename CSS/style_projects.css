@@ -1043,7 +1043,7 @@ textarea::placeholder {
   .project-subtitle {
     font-size: 48px;
     font-weight: 275;
-    line-height: 64px;
+    line-height: 48px;
     letter-spacing: -1.079px;
     margin-bottom: 12px;
   }
