@@ -127,7 +127,7 @@ function loadProject() {
               mediaElement.autoplay = true;
               mediaElement.controls = false;
               mediaElement.loop = true;
-              mixMediaElement.playsInline = true; 
+              mediaElement.playsInline = true; 
               mediaElement.addEventListener("loadedmetadata", function () {
                 if (this.videoWidth > this.videoHeight) {
                   // Horizontal video
