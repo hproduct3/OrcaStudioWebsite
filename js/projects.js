@@ -558,31 +558,31 @@ document.addEventListener(
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadProject();
-  loadRelatedProjects();
-  setupModal();
-  setupImageProtection();
+// document.addEventListener("DOMContentLoaded", () => {
+//   loadProject();
+//   loadRelatedProjects();
+//   setupModal();
+//   setupImageProtection();
 
-  const resizeObserver = new ResizeObserver(() => {
-    debouncedUpdateClasses();
-  });
-  resizeObserver.observe(document.body);
+//   const resizeObserver = new ResizeObserver(() => {
+//     debouncedUpdateClasses();
+//   });
+//   resizeObserver.observe(document.body);
 
-  document.getElementById("menu").addEventListener("click", function (event) {
-    if (event.target.classList.contains("header-btn-1")) {
-      event.preventDefault();
-      this.querySelectorAll(".header-btn-1").forEach(link => {
-        link.classList.remove("selected");
-      });
-      event.target.classList.add("selected");
-      setTimeout(() => {
-        window.location.href = event.target.getAttribute("href");
-      }, 300);
-    }
-  });
-});
+//   document.getElementById("menu").addEventListener("click", function (event) {
+//     if (event.target.classList.contains("header-btn-1")) {
+//       event.preventDefault();
+//       this.querySelectorAll(".header-btn-1").forEach(link => {
+//         link.classList.remove("selected");
+//       });
+//       event.target.classList.add("selected");
+//       setTimeout(() => {
+//         window.location.href = event.target.getAttribute("href");
+//       }, 300);
+//     }
+//   });
+// });
 
-// Make necessary functions global
-window.toggleMenu = toggleMenu;
-window.topFunction = topFunction;
+// // Make necessary functions global
+// window.toggleMenu = toggleMenu;
+// window.topFunction = topFunction;
