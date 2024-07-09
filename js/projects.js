@@ -127,6 +127,7 @@ function loadProject() {
               mediaElement.autoplay = true;
               mediaElement.controls = false;
               mediaElement.loop = true;
+              mixMediaElement.playsInline = true; 
               mediaElement.addEventListener("loadedmetadata", function () {
                 if (this.videoWidth > this.videoHeight) {
                   // Horizontal video
@@ -205,6 +206,7 @@ function loadProject() {
               mixMediaElement.autoplay = true;
               mixMediaElement.controls = false;
               mixMediaElement.loop = true;
+              mixMediaElement.playsInline = true; 
             } else if (tile.imageUrl) {
               mixMediaElement = document.createElement("img");
               mixMediaElement.src = tile.imageUrl;
